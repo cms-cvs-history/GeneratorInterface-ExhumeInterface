@@ -1,0 +1,15 @@
+
+# Exhume Datacard
+
+source = ExhumeSource {
+	untracked int32 maxEvents = 10
+  	untracked int32 pythiaPylistVerbosity = 0
+  	untracked bool pythiaHepMCVerbosity = false
+  	untracked int32 maxEventsToPrint = 0
+	untracked string ProcessType = "Higgs" 
+	untracked double HiggsMass = 120.0
+	untracked int32 HiggsDecay = 5
+	untracked double MassRangeLow = 115.0
+	untracked double MassRangeHigh = 125.0 
+	untracked string lhapdfSetPath = "/afs/cern.ch/sw/lcg/external/MCGenerators/lhapdf/5.2.3/share/PDFsets"
+}	

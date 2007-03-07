@@ -1,0 +1,16 @@
+<use name=boost>
+<use name=root>
+<use name=GeneratorInterface/ExhumeInterface>
+<use name=FWCore/Framework>
+<use name=Foundation/PluginManager>
+<use name=FWCore/ParameterSet>
+<use name=CLHEP>
+<use name=root>
+<use name=SimDataFormats/HepMCProduct>
+<library file=HWWAnalyzer.cc name=HWWAnalyzer>
+<flags SEAL_PLUGIN_NAME="HWWAnalyzer">
+</library>
+<library file=ExhumeAnalyzer.cc name=ExhumeAnalyzer>
+<flags SEAL_PLUGIN_NAME="ExhumeAnalyzer">
+</library>
+
