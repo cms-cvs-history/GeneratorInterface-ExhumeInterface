@@ -2,14 +2,39 @@
 # Exhume Datacard
 
 source = ExhumeSource {
+	# Exhume parameters
+	double B = 4.0
+	double LambdaQCD = 80.0
+	double Rg = 1.2
+	double Survive = 0.03
+	double PDF = 20250
+	double MinQt2 = 0.64
+	double AlphaEw = 0.0072974
+	double HiggsVev = 246.0
+	double BottomMass = 4.6
+        double CharmMass = 1.42
+        double StrangeMass = 0.19
+	double TopMass = 175.0
+	double MuonMass = 0.1057
+	double TauMass = 1.77
+	double WMass = 80.33
+	double ZMass = 91.187
+	int32 FNAL_or_LHC = 1
+	double root_s = 14000.0
+
+	# Process settings H->bb
+	string ProcessType = "Higgs"
+        double HiggsMass = 120.0
+        int32 HiggsDecay = 5
+        int32 QuarkType = 5
+        double ThetaMin = 0.95
+        double MassRangeLow = 115.0
+        double MassRangeHigh = 125.0
+
+	# General settings
 	untracked int32 maxEvents = 10
   	untracked int32 pythiaPylistVerbosity = 0
   	untracked bool pythiaHepMCVerbosity = false
   	untracked int32 maxEventsToPrint = 0
-	untracked string ProcessType = "Higgs" 
-	untracked double HiggsMass = 120.0
-	untracked int32 HiggsDecay = 5
-	untracked double MassRangeLow = 115.0
-	untracked double MassRangeHigh = 125.0 
 	untracked string lhapdfSetPath = "/afs/cern.ch/sw/lcg/external/MCGenerators/lhapdf/5.2.3/share/PDFsets"
 }	
