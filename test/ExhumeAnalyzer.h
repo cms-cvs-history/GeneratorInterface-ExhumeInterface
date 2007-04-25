@@ -9,11 +9,11 @@
 
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 
-#include "CLHEP/HepMC/WeightContainer.h"
-#include "CLHEP/HepMC/GenEvent.h"
-#include "CLHEP/HepMC/GenParticle.h"
+//#include "HepMC/WeightContainer.h"
+//#include "HepMC/GenEvent.h"
+//#include "HepMC/GenParticle.h"
 
-#include "SimDataFormats/HepMCProduct/interface/HepMCProduct.h"
+//#include "SimDataFormats/HepMCProduct/interface/HepMCProduct.h"
 
 #include "TH1D.h"
 #include "TFile.h"
@@ -41,6 +41,8 @@ class ExhumeAnalyzer : public edm::EDAnalyzer {
   TH1D* hist_xigen1;
   TH1D* hist_t2;
   TH1D* hist_xigen2;	
+  TH1D* hist_sHat;
+  TH1D* hist_MX;
 
 };
 
