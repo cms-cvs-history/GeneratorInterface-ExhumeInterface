@@ -32,7 +32,6 @@ source = ExhumeSource {
         double MassRangeHigh = 175.0
  
 	# General settings
-	untracked int32 maxEvents = 10
   	untracked int32 pythiaPylistVerbosity = 0
   	untracked bool pythiaHepMCVerbosity = false
   	untracked int32 maxEventsToPrint = 0
