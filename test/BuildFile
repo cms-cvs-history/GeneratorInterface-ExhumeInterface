@@ -1,14 +1,8 @@
-<use name=boost>
-<use name=root>
 <use name=FWCore/Framework>
-<use name=FWCore/PluginManager>
 <use name=FWCore/ParameterSet>
-<use name=CLHEP>
-<use name=hepmc>
-<use name=root>
-<use name=SimDataFormats/HepMCProduct>
-<use name=PhysicsTools/UtilAlgos>
 <flags EDM_PLUGIN=1>
 <library file=ExhumeAnalyzer.cc name=ExhumeAnalyzer>
+  <use name=SimDataFormats/HepMCProduct>
+  <use name=root>
 </library>
 

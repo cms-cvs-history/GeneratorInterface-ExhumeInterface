@@ -34,7 +34,8 @@ class ExhumeAnalyzer : public edm::EDAnalyzer {
       virtual void endJob() ;
 
       // ----------member data ---------------------------
-      
+ 
+  std::string outputFilename;     
   TH1D* hist_eta;
   TH1D* hist_t1;
   TH1D* hist_xigen1;
