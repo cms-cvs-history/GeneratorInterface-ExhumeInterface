@@ -1,7 +1,14 @@
 <use name=FWCore/Framework>
 <use name=FWCore/ParameterSet>
 <flags EDM_PLUGIN=1>
+
 <library file=ExhumeAnalyzer.cc name=ExhumeAnalyzer>
+  <use name=SimDataFormats/HepMCProduct>
+  <use name=root>
+</library>
+
+
+<library file=ExhumeProducerAnalyzer.cc name=ExhumeProducerAnalyzer>
   <use name=SimDataFormats/HepMCProduct>
   <use name=root>
 </library>
