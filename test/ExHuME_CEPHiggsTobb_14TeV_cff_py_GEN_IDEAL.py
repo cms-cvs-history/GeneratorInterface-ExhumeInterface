@@ -20,9 +20,9 @@ process.load('Configuration/StandardSequences/FrontierConditions_GlobalTag_cff')
 process.load('Configuration/EventContent/EventContent_cff')
 
 process.configurationMetadata = cms.untracked.PSet(
-    version = cms.untracked.string('$Revision:$'),
+    version = cms.untracked.string('$Revision: 1.1 $'),
     annotation = cms.untracked.string('ExHuME CEP of H->bb at 14TeV'),
-    name = cms.untracked.string('$Source:$')
+    name = cms.untracked.string('$Source: /cvs_server/repositories/CMSSW/CMSSW/GeneratorInterface/ExhumeInterface/test/ExHuME_CEPHiggsTobb_14TeV_cff_py_GEN_IDEAL.py,v $')
 )
 process.maxEvents = cms.untracked.PSet(
     input = cms.untracked.int32(1000)
@@ -34,6 +34,9 @@ process.options = cms.untracked.PSet(
 process.source = cms.Source("EmptySource")
 
 process.generator = cms.EDFilter("ExhumeGeneratorFilter",
+    PythiaParameters = cms.PSet(
+       parameterSets = cms.vstring()
+    ),
     ExhumeParameters = cms.PSet(
        HiggsVev = cms.double(246.0),
        HiggsMass = cms.double(120.0),
