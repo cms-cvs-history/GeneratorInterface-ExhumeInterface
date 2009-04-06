@@ -7,10 +7,3 @@
   <use name=SimDataFormats/GeneratorProducts>
   <use name=root>
 </library>
-
-
-<library file=ExhumeProducerAnalyzer.cc name=ExhumeProducerAnalyzer>
-  <use name=SimDataFormats/GeneratorProducts>
-  <use name=root>
-</library>
-
