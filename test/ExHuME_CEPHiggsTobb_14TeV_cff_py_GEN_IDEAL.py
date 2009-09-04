@@ -20,12 +20,12 @@ process.load('Configuration/StandardSequences/FrontierConditions_GlobalTag_cff')
 process.load('Configuration/EventContent/EventContent_cff')
 
 process.configurationMetadata = cms.untracked.PSet(
-    version = cms.untracked.string('$Revision: 1.1 $'),
+    version = cms.untracked.string('$Revision: 1.2 $'),
     annotation = cms.untracked.string('ExHuME CEP of H->bb at 14TeV'),
     name = cms.untracked.string('$Source: /cvs_server/repositories/CMSSW/CMSSW/GeneratorInterface/ExhumeInterface/test/ExHuME_CEPHiggsTobb_14TeV_cff_py_GEN_IDEAL.py,v $')
 )
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1000)
+    input = cms.untracked.int32(100)
 )
 process.options = cms.untracked.PSet(
     Rethrow = cms.untracked.vstring('ProductNotFound')
@@ -72,7 +72,7 @@ process.generator = cms.EDFilter("ExhumeGeneratorFilter",
 # Output definition
 process.output = cms.OutputModule("PoolOutputModule",
     outputCommands = process.RAWSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('/tmp/antoniov/ExHuME_CEPHiggsTobb_14TeV_cff_py_GEN.root'),
+    fileName = cms.untracked.string('ExHuME_CEPHiggsTobb_14TeV_cff_py_GEN.root'),
     dataset = cms.untracked.PSet(
         dataTier = cms.untracked.string('GEN'),
         filterName = cms.untracked.string('')
@@ -85,7 +85,7 @@ process.output = cms.OutputModule("PoolOutputModule",
 # Additional output definition
 
 # Other statements
-process.GlobalTag.globaltag = 'IDEAL_30X::All'
+process.GlobalTag.globaltag = 'MC_31X_V5::All'
 
 # Path and EndPath definitions
 process.generation_step = cms.Path(process.generator*process.pgen)
